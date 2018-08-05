@@ -1,7 +1,9 @@
 % introduction-to-linear-algebra.tex
+% xelatex ./introduction-to-linear-algebra.tex 
 \documentclass[UTF8]{ctexart}
 
 \title{Introduction to Linear Algebra学习笔记}
+\author{Andy Yao}
 \date{\today}
 
 \begin{document}
@@ -16,6 +18,22 @@
 \section{Solving Linear Equations}
   \subsection{Vectors and Linear Equations}
   \subsection{The Idea of Elimination}
+  \subsection{Elimination Using Matrices}
+1. $Ax = x_{1}$ times column 1 + ... + $x_{n}$ times column n. And $(Ax)_{i} = \sum_{j=1}^n a_{ij}x_{j}$.
+
+2. Identity matrix $= I$, elimination matrix = $E_{ij}$ using $l_{ij}$, exchange matrix $= P_{ij}$.
+
+3. Multiplying Ax = b by E21 subtracts a multiple l21 of equation 1 from equation 2. The number -l21 is the (2.1) entry
+of the elimination matrix E21.
+
+4. For the augmented matrix [A b], that elimination step gives [E21A E21b].
+
+5. When A multiplies any matrix B, it multiplies each column of B separately.
+
+  \subsection{Rules for Matrix Operations}
+  \subsection{Inverse Matrices}
+  \subsection{Elimination = Factorization: A = LU}
+  \subsection{Transposes and Permutations}
 
 \end{document}
 
